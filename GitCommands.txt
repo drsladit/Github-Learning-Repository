@@ -6,4 +6,5 @@ git add *.py 		-- Will add all .py files
 git add . 		-- Will add all files in the folder
 git status 		-- To check whether the files are in staging/local to system
 git rm --cached <FileName> -- TO remove file from staging to untrack file
- 
+git commit 		--To commit changes to global repository with edit mode open
+git commit -m 'changed GitCommands.txt' - To commit a file with out edit mode
