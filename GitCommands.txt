@@ -1,6 +1,7 @@
 git --version 		-- To know Git version installed
 touch TestFile.py 	-- To create a file exixting path
-git init 		-- To initialize existing folder  
+git init 		-- To initialize existing folder
+
 git add <Filename>      -- To add file into staging
 git add *.py 		-- Will add all .py files
 git add . 		-- Will add all files in the folder
@@ -8,3 +9,8 @@ git status 		-- To check whether the files are in staging/local to system
 git rm --cached <FileName> -- TO remove file from staging to untrack file
 git commit 		--To commit changes to global repository with edit mode open
 git commit -m 'changed GitCommands.txt' - To commit a file with out edit mode
+
+clear 			-- command in gitbash to clear commands
+
+touch .gitignore - A file created, where we can give file names we want not to add to repository
+
