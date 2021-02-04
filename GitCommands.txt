@@ -1,3 +1,8 @@
+After successful installation of Git, you can configure your user name and e-mail ID using the following commands.
+
+$ git config --global user.name "First Last"
+$ git config --global user.email "myemail@domain.com"
+
 git --version 		-- To know Git version installed
 touch TestFile.py 	-- To create a file exixting path
 git init 		-- To initialize existing folder
@@ -14,3 +19,10 @@ clear 			-- command in gitbash to clear commands
 
 touch .gitignore - A file created, where we can give file names we want not to add to repository
 
+How to branch
+
+how to create github
+
+how to push code to remote
+
+how to pull
