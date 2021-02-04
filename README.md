@@ -1,2 +1,2 @@
-# Github-ProjectGit
+# Github-LearningRepository
 Git Concepts Folder
