@@ -1,3 +1,6 @@
+f5eb055b22facbe2b9873721addb33a0fe6702e3
+
+Part 1: Installation and verification commands
 After successful installation of Git, you can configure your user name and e-mail ID using the following commands.
 
 $ git config --global user.name "First Last"
@@ -7,6 +10,7 @@ git --version 		-- To know Git version installed
 touch TestFile.py 	-- To create a file exixting path
 git init 		-- To initialize existing folder
 
+Part 2: Basic Commands for making changes
 git add <Filename>      -- To add file into staging
 git add *.py 		-- Will add all .py files
 git add . 		-- Will add all files in the folder
@@ -14,7 +18,6 @@ git status 		-- To check whether the files are in staging/local to system
 git rm --cached <FileName> -- TO remove file from staging to untrack file
 git commit 		--To commit changes to global repository with edit mode open
 git commit -m 'changed GitCommands.txt' - To commit a file with out edit mode
-
 clear 			-- command in gitbash to clear commands
 
 touch .gitignore - A file created, where we can give file names we want not to add to repository
@@ -26,3 +29,22 @@ how to create github
 how to push code to remote
 
 how to pull
+
+Part 3: Git to Gihub and vice versa:
+git remote - Gives all remote location details. Example: origin
+git remote add origin https://github.com/drsladit/Github-LearningRepository.git
+git push -u origin master
+It asks for github credentials, if it doesn't login. Read error description.
+Sometimes if central repository(Github in this case) is no where related or if push command used first time. then it throws error.
+
+Then first use pull command to pull from central to local.
+git pull origin master --allow-unrelated-histories and then push.
+
+git clone URL to pull enter code
+
+
+
+
+
+
+
