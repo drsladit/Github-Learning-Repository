@@ -1,5 +1,3 @@
-f5eb055b22facbe2b9873721addb33a0fe6702e3
-
 Part 1: Installation and verification commands
 After successful installation of Git, you can configure your user name and e-mail ID using the following commands.
 
@@ -33,6 +31,8 @@ how to pull
 Part 3: Git to Gihub and vice versa:
 git remote - Gives all remote location details. Example: origin
 git remote add origin https://github.com/drsladit/Github-LearningRepository.git
+git pull URL - first time
+git push - often
 git push -u origin master
 It asks for github credentials, if it doesn't login. Read error description.
 Sometimes if central repository(Github in this case) is no where related or if push command used first time. then it throws error.
