@@ -19,7 +19,7 @@ git commit -m 'changed GitCommands.txt' - To commit a file with out edit mode
 clear 			-- command in gitbash to clear commands
 
 touch .gitignore - A file created, where we can give file names we want not to add to repository
-
+touch .gitkeep - usually git ignore empty directories to keep them traking use athis command
 How to branch
 
 how to create github
@@ -42,6 +42,24 @@ git pull origin master --allow-unrelated-histories and then push.
 
 git clone URL to pull enter code
 
+Part 4: Git History commands
+git diff 			--shows difference between recently add to staging and current file
+git diff --staged  --shows changes between recent staging area to local reposit/recent commit
+
+
+git log -2 						-- displays the history of last two commits
+git log e3498ec27ccf0db06f09533e21e20a4da2cc691e 	-- shows the history starting from commit_id
+git log GitCommands.txt					-- displays the list of commits for the file
+git log --oneline --graph --decorate
+
+
+git log --stat
+git log --author="drsladit"
+git log --since=*2021-02-01* 		--Provides commits from given to till date
+git log --until-02-01* 			--Provides commits from given to till date
+git log --oneline			-- Fits the log output to a single line
+git log --oneline -3			-- Fits the log output to a single line and last 3 commits
+git log --graph 			--Gives a graphical representation to the log output
 
 
 
