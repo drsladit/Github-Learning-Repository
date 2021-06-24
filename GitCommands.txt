@@ -91,6 +91,18 @@ git log --oneline -3			-- Fits the log output to a single line and last 3 commit
 git log --graph 			--Gives a graphical representation to the log output
 
 
+***--------------------------------***
+Topics to learn:
+merging of branches
+stash
+commit - git reset soft and hard
+checkout
+branch creation 
+navigating to existing branch
+branch deletion
+commit - cherry picking
+
+
 
 
 
