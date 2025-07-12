@@ -17,7 +17,7 @@ Point 3: Start either by cloning a repository (or) initialising a repository.
 	$ git init 		-- To initialize existing folder
 	$ touch TestFile.py 	-- To create a file exixting path
 
-Part 4: Basic commands for pushing changes to local repository
+Point 4: Basic commands for pushing changes to local repository
 	$ git add <Filename>      -- To add file into staging
 	$ git add *.py 		  -- Will add all .py files
 	$ git add . 		  -- Will add all files in the folder
@@ -27,14 +27,19 @@ Part 4: Basic commands for pushing changes to local repository
 	$ git commit -m 'changed GitCommands.txt' - To commit a file without edit mode
 	$ clear 			-- command in gitbash to clear commands
 
-Part 5: Push changes from local to Remote repository
+Point 5: Push changes from local to Remote repository
     a) Approach if you cloned a remote repository and then pushing changes
 	$ git push
-    b) Appraoch if you created a repository and pushing changes
-	$ git remote add origin <github repository URL>
+    b) Appraoch if you created a repository in Github and pushing changes from local  repo to github repo
+	Step 1: $ git remote add origin <github repository URL>
+	Step 2: git remote -v 		- To check remote repo name
+	Step 3: $ git pull		- Pulls remote repo files to local repo
+	ELSE: IF you want to pull a particular Branch files
+	CMD: git pull origin origin <Branch_name: main in case of main branch>	
 
 
-Part 6a: Ignoring files
+
+Point 6a: Ignoring files
     Create a <file> with format .ignorefile. Inlude file names and folder names
 	Example: github-recovery-codes_1, All files in a fodler: other/*
 	$ touch .gitignore - A file created, where we can give file names we want not to add to repository
@@ -43,7 +48,7 @@ Part 6a: Ignoring files
     To find out which folders and files git ignore that are defined in .gitignore file.
 	$ git status --ignored
 
-Part 6b: To get list f recent commit information
+Point 6b: To get list f recent commit information
 	$ git log -2 						-- displays the history of last two commits
 	$ git log --oneline -3			-- Fits the log output to a single line and last 3 commits
 
@@ -60,20 +65,22 @@ Part 6b: To get list f recent commit information
 
 
 
-Incase if a file is already tracked by git and you want to untrack and ignore it. Use
-CMD: git rm -r --cached folder_name
+Point 7: Branches in git
+	a) Creating and navigating between branches
+    	$ git branch		-- To know branches of this repository & also Currently to which branch out git is pointing
+	$ git brach <Name of branch to be created> 	-- To create new branch
+	$ git branch checkout <branch name>	-- Move to new branch
+	
+	b) Push new brach from local repo to remote repo/github
+	$ git push origin <branch_name>
 
 
 
-How to branch
 
-how to create github
 
-how to push code to remote
 
-how to pull
 
-Part 3: Git to Gihub and vice versa:
+Git to Gihub and vice versa:
 git remote - Gives all remote location details. Example: origin
 git remote add origin https://github.com/drsladit/Github-LearningRepository.git
 git pull URL - first time
