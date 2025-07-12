@@ -66,9 +66,13 @@ Point 6b: To get list f recent commit information
 
 
 Point 7: Branches in git
+	a) Creating and navigating between branches
     	$ git branch		-- To know branches of this repository & also Currently to which branch out git is pointing
 	$ git brach <Name of branch to be created> 	-- To create new branch
-	$ git branch checkout <branch name>
+	$ git branch checkout <branch name>	-- Move to new branch
+	
+	b) Push new brach from local repo to remote repo/github
+	$ git push origin <branch_name>
 
 
 
