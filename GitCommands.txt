@@ -1,25 +1,44 @@
-Part 1: Installation and verification commands
-After successful installation of Git, you can configure your user name and e-mail ID using the following commands.
+Point 1: Git installation verification commands
+	$ git and enter			-- To know Git installed ot not
+	$ git --version 		-- To know Git version installed
 
-$ git config --global user.name "First Last"
-$ git config --global user.email "myemail@domain.com"
+Point 2: Sync/connect git and github
+    Configure your user name and e-mail ID using the following commands.
+	$ git config --global user.name "ProfilenamefromGuthubaccount"
+	$ git config --global user.email "drsladit.91@gmail.com"
+    Verifiication command
+	$ git config --list
 
-git --version 		-- To know Git version installed
-touch TestFile.py 	-- To create a file exixting path
-git init 		-- To initialize existing folder
+Point 3: Start either by cloning a repository (or) initialising a repository.
+    Clone a repository from github
+	$ git clone <github repository URL>
+    Initialising a repository
+	$ git init 		-- To initialize existing folder
+	$ touch TestFile.py 	-- To create a file exixting path
 
-Part 2: Basic Commands for making changes
-git add <Filename>      -- To add file into staging
-git add *.py 		-- Will add all .py files
-git add . 		-- Will add all files in the folder
-git status 		-- To check whether the files are in staging/local to system
-git rm --cached <FileName> -- TO remove file from staging to untrack file
-git commit 		--To commit changes to global repository with edit mode open
-git commit -m 'changed GitCommands.txt' - To commit a file with out edit mode
-clear 			-- command in gitbash to clear commands
+Part 4: Basic commands for pushing changes to local repository
+	$ git add <Filename>      -- To add file into staging
+	$ git add *.py 		  -- Will add all .py files
+	$ git add . 		  -- Will add all files in the folder
+	$ git status 		  -- To check whether the files are in staging/local to system
+	$ git rm --cached <FileName> -- TO remove file from staging to untrack file
+	$ git commit 		--To commit changes to global repository with edit mode open
+	$ git commit -m 'changed GitCommands.txt' - To commit a file without edit mode
+	$ clear 			-- command in gitbash to clear commands
 
-touch .gitignore - A file created, where we can give file names we want not to add to repository
-touch .gitkeep - usually git ignore empty directories to keep them traking use athis command
+
+Part 5: Ignoring files
+	$ touch .gitignore - A file created, where we can give file names we want not to add to repository
+	$ touch .gitkeep - usually git ignore empty directories to keep them traking use athis command
+
+    To find out which folders and files git ignore that are defined in .gitignore file.
+	$ git status --ignored
+
+Incase if a file is already tracked by git and you want to untrack and ignore it. Use
+CMD: git rm -r --cached folder_name
+
+
+
 How to branch
 
 how to create github
@@ -43,8 +62,8 @@ git pull origin master --allow-unrelated-histories and then push.
 git clone URL to pull enter code
 
 
-***----------------------***
-Difference between git pull(git fetch+git merge) and git clone
+***-------- GIT CLONE & GIT PULL s--------------***
+Difference between git clone and git pull(git fetch+git merge) and
 
 ---Git CLONE---
 Command: git clone https://github.com/drsladit/Github-LearningRepository.git

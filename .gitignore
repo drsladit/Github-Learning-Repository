@@ -1,1 +1,5 @@
-ignorefile.txt
+other/ignorefile.txt
+other/git_token.txt
+other/github-recovery-codes
+other/github-recovery-codes_1
+other/*
