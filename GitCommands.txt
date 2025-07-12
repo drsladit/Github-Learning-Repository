@@ -74,8 +74,8 @@ Point 7: Branches in git
 	b) Push new brach from local repo to remote repo/github
 	$ git push origin <branch_name>
 
-
-
+	c) Moving changes from one branch to other branch(master branch)
+	You need to create pull request in github and select from which branch to other branch.
 
 
 Git to Gihub and vice versa:
