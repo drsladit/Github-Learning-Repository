@@ -1,2 +1,2 @@
 # Github-LearningRepository
-Git Concepts Folder
+Git and Github learn and practice repository
