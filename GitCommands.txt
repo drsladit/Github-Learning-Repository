@@ -69,14 +69,34 @@ Point 7: Branches in git
 	a) Creating and navigating between branches
     	$ git branch		-- To know branches of this repository & also Currently to which branch out git is pointing
 	$ git brach <Name of branch to be created> 	-- To create new branch
+	$ git checkout -b <branch_name> or git switch -c <branch_name> -- Creates and switches to new branch
 	$ git branch checkout <branch name>	-- Move to new branch
+		or
+	$ git switch <branch_name>
 	
 	b) Push new brach from local repo to remote repo/github
 	$ git push origin <branch_name>
 
+
 	c) Moving changes from one branch to other branch(master branch)
 	You need to create pull request in github and select from which branch to other branch.
+		or 
+	You merge a specified branch to current branch using commands
+	$ git merge <branch_name>
 
+	d) Delete branch
+	$ git branch -d <branch_name> - Delete a local branch(only if it is fully  merged)
+	$ git branch -D <branch_name> - Force deletes a local branch
+	$ git push origin --delete <branch_name> - Delete a remote branch
+	
+	e) Rename a branch
+	$ git git branch -m <old_name> <new_name>
+
+	f) list remote branches
+	$ git branch -r -- lists remote branches
+
+
+	
 
 Git to Gihub and vice versa:
 git remote - Gives all remote location details. Example: origin
