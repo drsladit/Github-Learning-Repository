@@ -93,8 +93,6 @@ Point 7: Branches in git
 
 	
 
-
-
 Git to Gihub and vice versa:
 git remote - Gives all remote location details. Example: origin
 git remote add origin https://github.com/drsladit/Github-LearningRepository.git
