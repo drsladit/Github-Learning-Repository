@@ -79,9 +79,9 @@ Point 7: Branches in git
 
 
 	c) Moving changes from one branch to other branch(master branch)
-	You need to create pull request in github and select from which branch to other branch.
+	    You need to create pull request in github and select from which branch to other branch.
 		or 
-	You merge a specified branch to current branch using commands
+	    You merge a specified branch to current branch using commands
 	$ git merge <branch_name>
 
 	d) Delete branch
