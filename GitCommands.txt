@@ -22,10 +22,18 @@ Point 4: Basic commands for pushing changes to local repository
 	$ git add *.py 		  -- Will add all .py files
 	$ git add . 		  -- Will add all files in the folder
 	$ git status 		  -- To check whether the files are in staging/local to system
-	$ git rm --cached <FileName> -- TO remove file from staging to untrack file
 	$ git commit 		--To commit changes to global repository with edit mode open
 	$ git commit -m 'changed GitCommands.txt' - To commit a file without edit mode
 	$ clear 			-- command in gitbash to clear commands
+
+Point 5: Revert changes fron staging folder
+	$ git restore <file_name>
+	$ git restore --staged <file>...  -- To restore staged file changes i.e.(git add .)
+	$ git rm --cached <FileName> -- To remove file from staging to untrack file(Note: When committed it removes the file)
+
+
+Point 6: To check diff in commits
+	$ git diff
 
 Point 5: Push changes from local to Remote repository
     a) Approach if you cloned a remote repository and then pushing changes
