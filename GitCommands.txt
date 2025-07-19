@@ -26,14 +26,19 @@ Point 4: Basic commands for pushing changes to local repository
 	$ git commit -m 'changed GitCommands.txt' - To commit a file without edit mode
 	$ clear 			-- command in gitbash to clear commands
 
-Point 5: Revert changes fron staging folder
-	$ git restore <file_name> 	-- To restore changes from commit back to working directory
-	$ git restore --staged <file>...  -- To restore staged file changes i.e.(git add .)
+Point 5: Revert/Restore changes
+	$ git restore <file_name> --Replaces the file in your working directory with the version from the latest commit.
+	$ git restore --staged <file>...  --Keeps your working directory changes, but removes the file from the staged (to-be-committed) list.
 	$ git rm --cached <FileName> -- To remove file from staging to untrack file(Note: When committed it removes the file)
 
 
 Point 6: To check diff in commits
-	$ git diff
+	$ git diff 		-- working directory vs. staging area
+	$ git diff --staged or (git diff --cached)	-- staging area vs. last commit
+	$ git diff <commit1> <commit2>		-- Compare two commits
+	$ git diff branch1..branch2		- Compare two branches
+	$ git diff head <file>			-- Working dir vs Last commit
+
 
 Point 5: Push changes from local to Remote repository
     a) Approach if you cloned a remote repository and then pushing changes
