@@ -43,7 +43,7 @@ Point 6: To check diff in commits
 Point 5: Push changes from local to Remote repository
     a) Approach if you cloned a remote repository and then pushing changes
 	$ git push
-    b) Appraoch if you created a repository in Github and pushing changes from local  repo to github repo
+    b) Appraoch if you created a repository in Github and pushing changes from local repo to github repo
 	Step 1: $ git remote add origin <github repository URL>
 	Step 2: git remote -v 		- To check remote repo name
 	Step 3: $ git pull		- Pulls remote repo files to local repo
@@ -103,11 +103,14 @@ Point 7: Branches in git
 	$ git push origin --delete <branch_name> - Delete a remote branch
 	
 	e) Rename a branch
-	$ git git branch -m <old_name> <new_name>
+	$ git branch -m <old_name> <new_name>
 
 	f) list remote branches
 	$ git branch -r -- lists remote branches
-
+	
+IMP:	g) Revert/Undo merged changes
+	$ git revert -m 1 <merge_commit_hash> -- Safer: This does not delete the merge happened, but reverts its changes i.e. and adds a new commit that undoes the merge. So any commits happened after this merge are not deleted but kept in history
+	git reset --hard <commit_hash_before_merge> -- WARNING: This is destructive — it will also discard any changes made after the merge, and it rewrites history. Use only if you're sure no one else has pulled from this branch yet.
 
 	
 
