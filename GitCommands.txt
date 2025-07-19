@@ -27,7 +27,7 @@ Point 4: Basic commands for pushing changes to local repository
 	$ clear 			-- command in gitbash to clear commands
 
 Point 5: Revert changes fron staging folder
-	$ git restore <file_name>
+	$ git restore <file_name> 	-- To restore changes from commit back to working directory
 	$ git restore --staged <file>...  -- To restore staged file changes i.e.(git add .)
 	$ git rm --cached <FileName> -- To remove file from staging to untrack file(Note: When committed it removes the file)
 
